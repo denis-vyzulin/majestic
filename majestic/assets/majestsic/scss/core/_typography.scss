@@ -1,0 +1,59 @@
+// ==> Embedding fonts
+@include embeddingFont('Ubuntu', 'Ubuntu-Regular', 400, normal);
+@include embeddingFont('Ubuntu', 'Ubuntu-Medium', 500, normal);
+@include embeddingFont('Nunito', 'Nunito-Regular', 400, normal);
+@include embeddingFont('Nunito', 'Nunito-Bold', 700, normal);
+@include embeddingFont('Nunito', 'Nunito-Black', 900, normal);
+
+
+// ==> Headings
+h1, h2, h3,
+h4, h5 {
+    color: $heading-color;
+    font-family: $heading-font;
+}
+
+h1 {
+    @include adaptiveFontSize(48, 32);
+}
+h2 {
+    @include adaptiveFontSize(36, 24);
+}
+h3 {
+    @include adaptiveFontSize(28, 20);
+}
+h4 {
+    @include adaptiveFontSize(22, 18);
+}
+h5 {
+    @include adaptiveFontSize(16, 14);
+}
+
+
+// ==> Parent text elements
+p,
+li,
+th,
+td,
+button,
+form,
+input,
+textarea,
+blockquote {
+    color: $text-color;
+    font-family: $standart-font;
+    @include adaptiveFontSize(16, 14);
+}
+
+// ==> Child text elements
+a,
+i,
+b,
+q,
+em,
+mark,
+strong {
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}

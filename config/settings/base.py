@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Application definition
-INSTALLED_APPS = [
+REQUIREMENT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -14,6 +14,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+PROJECT_APPS = [
+    'majestic.apps.MajesticConfig',
+]
+
+INSTALLED_APPS = REQUIREMENT_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -30,7 +36,9 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'majestic/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
