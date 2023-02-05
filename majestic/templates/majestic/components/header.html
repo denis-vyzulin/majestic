@@ -3,19 +3,24 @@
     <div class="header-inner header__inner">
         <img src="{% static 'logotype.png' %}" alt="" class="header-inner__logo">
         <nav class="menu header-inner__menu">
-            <a href="" class="menu__link">
+            <a href="" class="menu__link
+            {% if request.path == '/about/' %}_active{% endif %}">
                 О компании
             </a>
-            <a href="" class="menu__link">
+            <a href="" class="menu__link
+            {% if request.path == '/services/' %}_active{% endif %}">
                 Наши услуги
             </a>
-            <a href="" class="menu__link">
+            <a href="{% url 'majestic:price' %}" class="menu__link
+            {% if request.path == '/price/' %}_active{% endif %}">
                 Стоимость вышивки
             </a>
-            <a href="" class="menu__link">
+            <a href="" class="menu__link
+            {% if request.path == '/payment-delivery/' %}_active{% endif %}">
                 Оплата и доставка
             </a>
-            <a href="" class="menu__link">
+            <a href="" class="menu__link
+            {% if request.path == '/contacts/' %}_active{% endif %}">
                 Контакты
             </a>
         </nav>

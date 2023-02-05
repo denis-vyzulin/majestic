@@ -46,6 +46,12 @@
         &:hover {
             color: $primary-color;
         }
+
+        &._active {
+            color: $primary-color;
+            pointer-events: none;
+            cursor: default;
+        }
     }
 }
 

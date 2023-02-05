@@ -1,0 +1,63 @@
+.table-wrapper {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    &__head {
+        background-color: $table-background;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.table-body {
+    &__row {
+        &:not(:last-child) {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}
+
+.thead-row {
+    &__cell {
+        min-width: 240px;
+        color: $heading-color;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+.thead-row,
+.tbody-row {
+    &__cell {
+        padding: 16px 24px;
+        @include adaptiveFontSize(17, 15);
+
+        &:not(:last-child) {
+            border-right: 1px solid $border-color;
+        }
+    }
+}
+
+
+
+// ==> Styles for tablet
+@media screen and (max-width: #{$bp-md + px}) {
+    .thead-row {
+        &__cell {
+            min-width: 120px;
+        }
+    }
+    .thead-row,
+    .tbody-row {
+        &__cell {
+            padding: 10px 16px;
+        }
+    }
+}

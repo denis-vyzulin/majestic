@@ -1,0 +1,264 @@
+{% extends 'majestic/base.html' %}
+{% load static %}
+
+
+{% block meta_tags %}
+
+{% endblock %}
+
+{% block title %}
+<title>
+    Стоимость машинной вышивки — Вышивальная компания Majestic
+</title>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'majestic/css/price.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="page-headings content__headings">
+    <h1 class="page-title page-headings__title">
+        Стоимость вышивки
+    </h1>
+    <p class="page-subtitle page-headings__subtitle">
+        * Для оптовых заказчиков есть индивидуальные условия
+    </p>
+</div>
+<!-- / end of page headings -->
+
+<section class="price content__price">
+    <h4 class="price__title">
+        Вышивка на крое
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Тираж
+                    </th>
+                    <th class="thead-row__cell">
+                        Цена, 1000 стежков/₽
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        50–100
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 8
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        100–500
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 7
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        500–1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 6
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        свыше 1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 5
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 1st price list -->
+
+<section class="price content__price">
+    <h4 class="price__title">
+        Вышивка на готовых изделиях
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Тираж
+                    </th>
+                    <th class="thead-row__cell">
+                        Цена, 1000 стежков/₽
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        50–100
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 25
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        100–500
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 15
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        500–1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 10
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        свыше 1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 9
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 2nd price list -->
+
+<section class="price content__price">
+    <h4 class="price__title">
+        Изготовление шевронов, нашивок
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Тираж
+                    </th>
+                    <th class="thead-row__cell">
+                        Цена, 1000 стежков/₽
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        50–100
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 10
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        100–500
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 8
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        500–1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 6
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        свыше 1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 5
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 3rd price list -->
+
+<section class="price content__price">
+    <h4 class="price__title">
+        Дополнительные услуги
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Название услуги
+                    </th>
+                    <th class="thead-row__cell">
+                        Стоимость
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        Упаковка готовых изделий
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 2 ₽/ед.
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        Вышивка на трикотаже
+                    </td>
+                    <td class="tbody-row__cell">
+                        +10% к стоимости
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        Вышивка металлизированной нитью (золото, серебро)
+                    </td>
+                    <td class="tbody-row__cell">
+                        +20% к стоимости
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 4th price list -->
+
+<section class="development content__development">
+    <h4 class="development__title">Разработка программы для вышивки</h4>
+    <p class="development__subtitle">(дополнительные условия к прайсу)</p>
+
+    <p class="development__text">
+        <span>Срок изготовления:</span>
+        от 1 до 7 рабочих дней в зависимости от сложности.
+    </p>
+    <p class="development__text">
+        <span>Минимальная стоимость разработки:</span>
+        400₽.
+    </p>
+    <p class="development__text">
+        <span>Срочная разработка программы:</span>
+        на индивидуальных условиях.
+    </p>
+    <p class="development__text">
+        При единовременном размещении заказа <span>от 100 ед.</span> программа изготавливается <span>бесплатно</span>.
+    </p>
+</section>
+<!-- / end of development description -->
+{% endblock %}

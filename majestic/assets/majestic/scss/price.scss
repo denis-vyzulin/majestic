@@ -1,0 +1,44 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+
+
+.content {
+    &__price {
+        margin-top: 32px;
+    }
+}
+
+.price {
+    &__title {
+        margin-bottom: 4px;
+    }
+}
+
+.content {
+    &__development {
+        margin-top: 40px;
+    }
+}
+
+.development {
+    &__title {
+        line-height: 1;
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+        color: $heading-color;
+        font-weight: 500;
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+        span {
+            font-weight: 500;
+        }
+    }
+}

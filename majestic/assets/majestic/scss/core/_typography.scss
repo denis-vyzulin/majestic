@@ -3,6 +3,7 @@
 @include embeddingFont('Ubuntu', 'Ubuntu-Medium', 500, normal);
 @include embeddingFont('Nunito', 'Nunito-Regular', 400, normal);
 @include embeddingFont('Nunito', 'Nunito-Bold', 700, normal);
+@include embeddingFont('Nunito', 'Nunito-ExtraBold', 800, normal);
 @include embeddingFont('Nunito', 'Nunito-Black', 900, normal);
 
 
@@ -11,6 +12,7 @@ h1, h2, h3,
 h4, h5 {
     color: $heading-color;
     font-family: $heading-font;
+    font-weight: 800;
 }
 
 h1 {

@@ -1,0 +1,28 @@
+.wrapper {
+    &__content {
+        padding: 40px 64px;
+    }
+}
+
+.page-headings {
+    &__title {
+        line-height: 1;
+        @include adaptiveFontSize(40, 28);
+    }
+
+    &__subtitle {
+        color: $text-color;
+        @include adaptiveFontSize(18, 14);
+    }
+}
+
+
+
+// ==> Styles for tablet
+@media screen and (max-width: #{$bp-md + px}) {
+    .wrapper {
+        &__content {
+            padding: 24px;
+        }
+    }
+}
