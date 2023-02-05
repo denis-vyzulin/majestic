@@ -1,4 +1,42 @@
 {% load static %}
-<header class="header">
-
+<header class="header wrapper__header" id="header">
+    <div class="header-inner header__inner">
+        <img src="{% static 'logotype.png' %}" alt="" class="header-inner__logo">
+        <nav class="menu header-inner__menu">
+            <a href="" class="menu__link">
+                О компании
+            </a>
+            <a href="" class="menu__link">
+                Наши услуги
+            </a>
+            <a href="" class="menu__link">
+                Стоимость вышивки
+            </a>
+            <a href="" class="menu__link">
+                Оплата и доставка
+            </a>
+            <a href="" class="menu__link">
+                Контакты
+            </a>
+        </nav>
+        <div class="header-info header-inner__info">
+            <div class="header-socials header-info__socials">
+                <a href="" class="header-socials__link" title="Viber, Хрустова Юлия">
+                    <img src="{% static 'majestic/img/socials/viber.png' %}" alt="" class="header-socials__image">
+                </a>
+                <a href="" class="header-socials__link" title="WhatsApp, Хрустова Юлия">
+                    <img src="{% static 'majestic/img/socials/whatsapp.png' %}" alt="" class="header-socials__image">
+                </a>
+                <a href="" class="header-socials__link" title="Telegram, Хрустова Юлия">
+                    <img src="{% static 'majestic/img/socials/telegram.png' %}" alt="" class="header-socials__image">
+                </a>
+            </div>
+            <p class="header-info__slogan">
+                Машинная вышивка любой сложности
+            </p>
+            <a href="" class="header-info__email">
+                info@majestic.ru
+            </a>
+        </div>
+    </div>
 </header>

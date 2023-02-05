@@ -1,0 +1,123 @@
+.header {
+    box-shadow: 0 0 40px rgba($primary-color, 0.1);
+    z-index: 64;
+
+    &__inner {
+        position: sticky;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 220px;
+        padding: 24px;
+        overflow: scroll;
+        background-color: white;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}
+
+.header-inner {
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.menu {
+    &__link {
+        color: $text-color;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.header-info {
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    &__slogan {
+        color: $text-color;
+        text-align: center;
+        @include adaptiveFontSize(14, 13);
+    }
+
+    &__email {
+        display: block;
+        color: $text-color;
+        text-align: center;
+        font-weight: 500;
+        text-decoration: none;
+        @include adaptiveFontSize(17, 16);
+        transition: color .3s;
+
+        &:hover {
+            color: $heading-color;
+        }
+    }
+}
+
+.header-socials {
+    &__link {
+        height: 28px;
+        width: 28px;
+
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+}
+
+
+
+// ==> Styles for small devices
+@media screen and (max-height: 500px),
+screen and (max-width: #{$bp-md + px}) {
+    .wrapper {
+        &__header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 220px;
+            background-color: transparent;
+            transform: translateX(-100%);
+            transition: transform .3s,
+                        background-color .3s;
+
+            &._active {
+                width: 500vw;
+                background-color: rgba($text-color, 0.3);
+                transform: translateX(0);
+
+                & .header__inner {
+                    width: 260px;
+                    padding: 24px 44px;
+                }
+            }
+        }
+    }
+}

@@ -100,7 +100,7 @@
 .footer-links {
     &__item {
         color: rgba(white, 0.8);
-        text-decoration: none;
+        text-decoration: underline;
         @include adaptiveFontSize(15, 13);
         transition: color .3s;
 

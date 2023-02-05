@@ -1,0 +1,18 @@
+.body {
+    &._active {
+        overflow: hidden;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}
+
+.wrapper {
+    min-height: 100vh;
+    &__header {
+        flex: 0 0 220px;
+    }
+}

@@ -13,20 +13,35 @@
     {% endblock %}
 
     {% block styles %}{% endblock %}
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'majestic/css/style.min.css' %}">
 
 </head>
-<body class="body">
+<body class="body" id="body">
 
-    <div class="wrapper">
+    <div class="burger body__burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+    </div>
+    <!-- / end of burger -->
 
+    <div class="wrapper body__wrapper">
+        {% include 'majestic/components/header.html' %}
+        <!-- / end of header -->
+
+        <main class="content wrapper__content">
+
+        </main>
     </div>
     <!-- / end of wrapper -->
 
     {% include 'majestic/components/footer.html' %}
     <!-- / end of footer -->
 
+
     {% block page_scripts %}{% endblock %}
+    <script src="{% static 'majestic/js/header.js' %}" type="text/javascript"></script>
     <!-- / end of scripts -->
 
 </body>
