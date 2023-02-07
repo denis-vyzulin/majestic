@@ -1,5 +1,5 @@
-import os
 import sys
+from os import environ as env
 
 
 try:
@@ -7,10 +7,10 @@ try:
 except:
     pass
 
-sys.path.append('/home/first_letter/username/majestic/')
-sys.path.append('/home/first_letter/username/majestic/venv/lib/python3.6/site-packages/')
+sys.path.append(env.get('DJANGO_PROJECT_PATH'))
+sys.path.append(env.get('PYTHON_PACKAGES_PATH'))
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.prod')
+env.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.prod')
 
 
 from django.core.wsgi import get_wsgi_application
