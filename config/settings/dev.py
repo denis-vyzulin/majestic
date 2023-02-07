@@ -3,8 +3,11 @@ from .base import *
 
 # Important settings
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 SECRET_KEY = 'django-insecure-w)is-4wd048#^*y+)8kha+g=i%k3$@aqf4jitt@a)j)wq4b$6%'
+
+# Application definition
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Databases
@@ -14,10 +17,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
-# Application definition
-WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Static files (CSS, JavaScript, Images)

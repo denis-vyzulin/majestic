@@ -7,6 +7,9 @@ DEBUG = env.get('DJANGO_DEBUG', False)
 SECRET_KEY = env.get('DJANGO_SECRET_KEY', 'django-insecure-)*gf_-pcx3=s!-1#l9^zjek2kl+(dn_ua1oh4@_m%q*y%o2+2m')
 ALLOWED_HOSTS = env.get('DJANGO_ALLOWED_HOSTS', '127.0.0.1 localhost').split(" ")
 
+# Application definition
+WSGI_APPLICATION = 'config.server.application'
+
 
 # Databases
 DATABASES = {
@@ -19,10 +22,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
-
-# Application definition
-WSGI_APPLICATION = 'server.application'
 
 
 # Static files (CSS, JavaScript, Images)
