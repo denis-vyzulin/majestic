@@ -3,13 +3,13 @@
 
 # Install virtualenv and activate it
 cd ../
-if ! [ -d ./django/ ]; then
+if ! [ -d ./venv/ ]; then
     if ! [ -f virtualenv.pyz ]; then
         wget https://bootstrap.pypa.io/virtualenv/3.6/virtualenv.pyz
     fi
-    python3 virtualenv.pyz django
+    python3 virtualenv.pyz venv
 fi
-. django/bin/activate
+. venv/bin/activate
 echo "Virtual environment successfully activated!"
 
 # Export variables to environment
