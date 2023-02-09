@@ -1,0 +1,65 @@
+{% extends 'majestic/base.html' %}
+{% load static %}
+
+
+{% block meta_tags %}
+
+{% endblock %}
+
+{% block title %}
+<title>
+    Нижегородская вышивальная компания «Majestic»
+</title>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'majestic/css/index.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<section class="intro content__intro">
+    <h1 class="intro__title">
+        <span>Машинная вышивка</span>
+        в&nbsp;Нижнем Новгороде
+    </h1>
+    <p class="intro__text">
+        Наносим рисунки на&nbsp;крой и&nbsp;текстильные изделия, используя современное оборудование, которое позволяет выполнять заказы быстро и&nbsp;качественно.
+    </p>
+    <a href="" class="intro__btn">
+        Посмотреть услуги
+    </a>
+</section>
+<!-- / end of intro -->
+
+<section class="advantage content__advantage">
+    <div class="advantage-item advantage__item">
+        <img src="{% static 'majestic/img/advantages/1.png' %}" alt="" class="advantage-item__icon">
+        <p class="advantage-item__text">
+            Высококачественные расходные материалы
+        </p>
+    </div>
+    <div class="advantage-item advantage__item">
+        <img src="{% static 'majestic/img/advantages/2.png' %}" alt="" class="advantage-item__icon">
+        <p class="advantage-item__text">
+            Доставка в любой регион России или СНГ
+        </p>
+    </div>
+    <div class="advantage-item advantage__item">
+        <img src="{% static 'majestic/img/advantages/3.png' %}" alt="" class="advantage-item__icon">
+        <p class="advantage-item__text">
+            Широкая цветовая палитра для ваших заказов
+        </p>
+    </div>
+</section>
+<!-- / end of advantage -->
+
+<section class="about content__about">
+    <h2 class="about__title">
+        О&nbsp;нашей компании
+    </h2>
+    <p class="about__text">
+        Мы занимаемся нанесением логотипов на&nbsp;готовые или текстильные изделия и&nbsp;крой при&nbsp;помощи современного вышивального оборудования. Наша компания «Majestic» работает с&nbsp;2018 года. За&nbsp;4 года мы смогли сильно преуспеть в&nbsp;нашей сфере и&nbsp;поработать с&nbsp;многими крупными компаниями
+    </p>
+</section>
+{% endblock %}

@@ -186,7 +186,7 @@
 // ==> Styles for mobile and tablet
 @media screen and (max-width: #{$bp-md - 1 + px}) {
     .footer {
-        padding: 24px;
+        padding: 16px;
     }
     .footer {
         &__upside {

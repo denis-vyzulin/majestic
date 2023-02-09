@@ -1,7 +1,9 @@
 {% load static %}
 <header class="header wrapper__header" id="header">
     <div class="header-inner header__inner">
-        <img src="{% static 'logotype.png' %}" alt="" class="header-inner__logo">
+        <a href="{% url 'majestic:home' %}" class="header-inner__home">
+            <img src="{% static 'logotype.png' %}" alt="" class="header-inner__logo">
+        </a>
         <nav class="menu header-inner__menu">
             <a href="" class="menu__link
             {% if request.path == '/about/' %}_active{% endif %}">
