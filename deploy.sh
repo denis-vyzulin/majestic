@@ -20,6 +20,10 @@ else
     echo "WARNING! Environ variables failed to load!"
 fi
 
+if [ -f server.py ]; then
+    cp ./server.py ./public_html/config/server.py
+fi
+
 # Install dependencies
 cd public_html/
 pip install -r requirements.txt
