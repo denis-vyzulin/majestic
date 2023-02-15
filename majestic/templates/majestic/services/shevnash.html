@@ -1,0 +1,107 @@
+{% extends 'majestic/services/base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>
+    Шевроны и нашивки — «Majestic»
+</title>
+{% endblock %}
+
+
+{% block service_title %}
+Шевроны и нашивки
+{% endblock %}
+
+{% block service_description %}
+Это наиболее распространенный способ нанесения корпоративной, спортивной или военной атрибутики из-за её высокой
+долговечности, износостойкости и&nbsp;привлекательного внешнего вида. Область применения шевронов велика и&nbsp;ограничивается
+лишь Вашей фантазией, можно нашить шеврон на&nbsp;детскую одежду, рюкзак, сумку и&nbsp;даже тапочки.
+{% endblock %}
+
+
+{% block service_images %}
+<img src="{% static 'majestic/img/services/shevnash/1.jpg' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/2.png' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/3.png' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/4.jpg' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/5.png' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/6.png' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/7.png' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/shevnash/8.png' %}" alt="" class="service-examples__image">
+{% endblock %}
+
+{% block service_content %}
+<section class="price content__price content__service-price">
+    <h4 class="price__title">
+        Стоимость вышивки
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Тираж
+                    </th>
+                    <th class="thead-row__cell">
+                        Цена, 1000 стежков/₽
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        50–100
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 10
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        100–500
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 8
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        500–1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 6
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        свыше 1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 5
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 1st price list -->
+
+<h4 class="service-title content__service-title">
+    Варианты крепления шевронов
+</h4>
+<section class="service-block content__service-block">
+    <ul class="service-list service-block__list">
+        <li class="service-list__elem">
+            Пришив к изделию
+        </li>
+        <li class="service-list__elem">
+            Липучка (контактная лента велькро)
+        </li>
+        <li class="service-list__elem">
+            Термоклеевая основа (крепится с помощью нагрева утюгом)
+        </li>
+    </ul>
+</section>
+<!-- / end of advantages of technologies -->
+{% endblock %}

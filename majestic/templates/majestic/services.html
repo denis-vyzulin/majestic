@@ -1,0 +1,94 @@
+{% extends 'majestic/base.html' %}
+{% load static %}
+
+
+{% block meta_tags %}
+
+{% endblock %}
+
+{% block title %}
+<title>
+    Услуги вышивальной компании «Majestic»
+</title>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'majestic/css/services.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="page-headings content__headings">
+    <h1 class="page-title page-headings__title">
+        Чем мы занимаемся
+    </h1>
+</div>
+<!-- / end of page headings -->
+
+<section class="services content__services">
+    <a href="{% url 'majestic:vnkroe' %}" class="service services__item">
+        <div class="service-upside service__upside">
+            <img src="{% static 'majestic/img/services/example-bg.png' %}" alt="" class="service-upside__background">
+            <p class="service-upside__text">
+                Перейти к описанию ->
+            </p>
+        </div>
+        <div class="service-backside service__backside">
+            <img src="{% static 'majestic/img/services/example.png' %}" alt="" class="service-backside__icon">
+            <h4 class="service-backside__name">
+                Вышивка на крое
+            </h4>
+        </div>
+    </a>
+    <!-- / end of item -->
+
+    <a href="{% url 'majestic:shevnash' %}" class="service services__item">
+        <div class="service-upside service__upside">
+            <img src="{% static 'majestic/img/services/example-bg.png' %}" alt="" class="service-upside__background">
+            <p class="service-upside__text">
+                Перейти к описанию ->
+            </p>
+        </div>
+        <div class="service-backside service__backside">
+            <img src="{% static 'majestic/img/services/example-2.png' %}" alt="" class="service-backside__icon">
+            <h4 class="service-backside__name">
+                Шевроны и нашивки
+            </h4>
+        </div>
+    </a>
+    <!-- / end of item -->
+
+    <a href="{% url 'majestic:vngotizd' %}" class="service services__item">
+        <div class="service-upside service__upside">
+            <img src="{% static 'majestic/img/services/example-bg.png' %}" alt="" class="service-upside__background">
+            <p class="service-upside__text">
+                Перейти к описанию ->
+            </p>
+        </div>
+        <div class="service-backside service__backside">
+            <img src="{% static 'majestic/img/services/example-3.png' %}" alt="" class="service-backside__icon">
+            <h4 class="service-backside__name">
+                Вышивка на готовых изделиях
+            </h4>
+        </div>
+    </a>
+    <!-- / end of item -->
+
+    <a href="{% url 'majestic:cerkvysh' %}" class="service services__item">
+        <div class="service-upside service__upside">
+            <img src="{% static 'majestic/img/services/example-bg.png' %}" alt="" class="service-upside__background">
+            <p class="service-upside__text">
+                Перейти к описанию ->
+            </p>
+        </div>
+        <div class="service-backside service__backside">
+            <img src="{% static 'majestic/img/services/example-4.png' %}" alt="" class="service-backside__icon">
+            <h4 class="service-backside__name">
+                Церковная вышивка
+            </h4>
+        </div>
+    </a>
+    <!-- / end of item -->
+</section>
+<!-- / end of services -->
+{% endblock %}

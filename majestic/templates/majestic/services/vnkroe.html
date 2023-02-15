@@ -1,0 +1,144 @@
+{% extends 'majestic/services/base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>
+    Вышивка на крое — «Majestic»
+</title>
+{% endblock %}
+
+
+{% block service_title %}
+Вышивка на крое
+{% endblock %}
+
+{% block service_description %}
+Вышивка на&nbsp;крое — это универсальный и&nbsp;удобный способ нанести вышивку на&nbsp;одежду. Подобная технология чаще всего применяется при&nbsp;производстве сумок, обуви или одежды. В&nbsp;отличие от&nbsp;популярной сегодня фотопечати, рисунок не&nbsp;выгорает, не&nbsp;линяет, сохраняя яроксть и&nbsp;четкость изображения в&nbsp;течение нескольких лет.
+{% endblock %}
+
+
+{% block service_images %}
+<img src="{% static 'majestic/img/services/vnkroe/1.jpg' %}" alt="" class="service-examples__image">
+<img src="{% static 'majestic/img/services/vnkroe/2.jpg' %}" alt="" class="service-examples__image">
+{% endblock %}
+
+{% block service_content %}
+<section class="price content__price content__service-price">
+    <h4 class="price__title">
+        Стоимость вышивки
+    </h4>
+    <div class="table-wrapper price__twrapper">
+        <table class="table price__table">
+            <thead class="table-head table__head">
+                <tr class="thead-row table-head__row">
+                    <th class="thead-row__cell">
+                        Тираж
+                    </th>
+                    <th class="thead-row__cell">
+                        Цена, 1000 стежков/₽
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body table__body">
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        50–100
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 8
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        100–500
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 7
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        500–1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 6
+                    </td>
+                </tr>
+                <tr class="tbody-row table-body__row">
+                    <td class="tbody-row__cell">
+                        свыше 1000
+                    </td>
+                    <td class="tbody-row__cell">
+                        от 5
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- / end of 1st price list -->
+
+<h4 class="service-title content__service-title">
+    Плюсы технологии
+</h4>
+<section class="service-block content__service-block">
+    <ul class="service-list service-block__list">
+        <li class="service-list__elem">
+            Высокая скорость — достигается благодаря более удобному доступу к рабочей поверхности
+        </li>
+        <li class="service-list__elem">
+            Возможность создания крупных и сложных рисунков
+        </li>
+        <li class="service-list__elem">
+            Сведение к минимуму риска порчи готового изделия — ткань не стягивается и не деформируется
+        </li>
+        <li class="service-list__elem">
+            Вышивка на плотной ткани, которая используется для пошива верхней одежды, мягкой мебели и т.д.
+        </li>
+        <li class="service-list__elem">
+            Вышивка на мелких деталях одежды — воротников, манжет, карманов
+        </li>
+        <li class="service-list__elem">
+            Брендирование или декорирование сумок, рюкзаков, бейсболок и т.д.
+        </li>
+        <li class="service-list__elem">
+            Вышивки изделий с подкладкой или наполнителем, например — курток, пиджаков, пальто и полупальто, подушек, кардиганов и т.д.
+        </li>
+    </ul>
+</section>
+<!-- / end of advantages of technologies -->
+
+<h4 class="service-title content__service-title">
+    Для вышивки на крое подходят
+</h4>
+<section class="service-block content__service-block">
+    <ul class="service-list service-block__list">
+        <li class="service-list__elem">
+            Хлопок и сатин
+        </li>
+        <li class="service-list__elem">
+            Трикотаж и полиэстер
+        </li>
+        <li class="service-list__elem">
+            Шелк и шифон
+        </li>
+        <li class="service-list__elem">
+            Огнестойкие ткани
+        </li>
+        <li class="service-list__elem">
+            Флис, футер и кашемир
+        </li>
+        <li class="service-list__elem">
+            Смесовые ткани, ткани для спецодежды
+        </li>
+        <li class="service-list__elem">
+            Кожа, эко-кожа и джинсовая ткань
+        </li>
+        <li class="service-list__elem">
+            Мебельные ткани
+        </li>
+    </ul>
+</section>
+<!-- / end of advantages of technologies -->
+{% endblock %}

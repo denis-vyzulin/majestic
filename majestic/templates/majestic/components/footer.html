@@ -11,9 +11,6 @@
                 Стоимость вышивки
             </a>
             <a href="" class="footer-navigation__item">
-                Оплата и доставка
-            </a>
-            <a href="" class="footer-navigation__item">
                 Контактная информация
             </a>
             <a href="" class="footer-navigation__item">
@@ -23,19 +20,19 @@
         <!-- / end of 1st navigation column -->
 
         <div class="footer-navigation footer-upside__navigation">
-            <a href="" class="footer-navigation__item">
+            <a href="{% url 'majestic:services' %}" class="footer-navigation__item">
                 Предоставляемые услуги
             </a>
-            <a href="" class="footer-navigation__item footer-navigation__item_opacity">
+            <a href="{% url 'majestic:vnkroe' %}" class="footer-navigation__item footer-navigation__item_opacity">
                 Вышивка на крое
             </a>
-            <a href="" class="footer-navigation__item footer-navigation__item_opacity">
+            <a href="{% url 'majestic:shevnash' %}" class="footer-navigation__item footer-navigation__item_opacity">
                 Шевроны и нашивки
             </a>
-            <a href="" class="footer-navigation__item footer-navigation__item_opacity">
+            <a href="{% url 'majestic:vngotizd' %}" class="footer-navigation__item footer-navigation__item_opacity">
                 Вышивка на готовых изделиях
             </a>
-            <a href="" class="footer-navigation__item footer-navigation__item_opacity">
+            <a href="{% url 'majestic:cerkvysh' %}" class="footer-navigation__item footer-navigation__item_opacity">
                 Церковная вышивка
             </a>
         </div>

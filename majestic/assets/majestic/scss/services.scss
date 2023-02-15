@@ -1,0 +1,98 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+.content {
+    &__services {
+        display: grid;
+        gap: 24px 24px;
+        grid-template-columns: repeat(auto-fit, 280px);
+        margin-top: 32px;
+    }
+}
+
+.services {
+    &__item {
+        display: inline-block;
+        position: relative;
+        height: 280px;
+        width: 280px;
+        text-decoration: none;
+        border: 2px solid $border-color;
+    }
+}
+
+.service {
+    &__upside {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    &:hover &__upside {
+        display: block;
+        animation-name: serviceFadeIn;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;
+    }
+
+    &__backside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.service-upside {
+    &__text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        @include adaptiveFontSize(16, 14);
+    }
+}
+
+.service-backside {
+    &__icon {
+        height: 140px;
+        width: 140px;
+        margin-bottom: 32px;
+    }
+
+    &__name {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 240px;
+        color: $text-color;
+        font-weight: 400;
+        font-family: $heading-font;
+        text-align: center;
+        @include adaptiveFontSize(18, 16);
+    }
+}
+
+
+
+// ==> Keyframes animations
+@keyframes serviceFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

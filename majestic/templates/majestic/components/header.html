@@ -9,7 +9,7 @@
             {% if request.path == '/about/' %}_active{% endif %}">
                 О компании
             </a>
-            <a href="" class="menu__link
+            <a href="{% url 'majestic:services' %}" class="menu__link
             {% if request.path == '/services/' %}_active{% endif %}">
                 Наши услуги
             </a>
@@ -18,8 +18,8 @@
                 Стоимость вышивки
             </a>
             <a href="" class="menu__link
-            {% if request.path == '/payment-delivery/' %}_active{% endif %}">
-                Оплата и доставка
+            {% if request.path == '/qna/' %}_active{% endif %}">
+                Вопросы и ответы
             </a>
             <a href="" class="menu__link
             {% if request.path == '/contacts/' %}_active{% endif %}">

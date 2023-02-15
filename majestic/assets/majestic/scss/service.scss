@@ -1,0 +1,80 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+
+
+.service-description {
+    &__text {
+        max-width: 800px;
+        margin-top: 12px;
+        @include adaptiveFontSize(18, 15);
+    }
+}
+
+.content {
+    &__service-title {
+        margin-top: 32px;
+        margin-bottom: 4px;
+    }
+
+    &__service-price {
+        margin-top: 64px !important;
+    }
+
+    &__service-examples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
+        grid-template-rows: repeat(auto-fit, minmax(140px, 200px));
+        gap: 2px;
+    }
+}
+
+.service-examples {
+    &__image {
+
+    }
+}
+
+.content {
+    &__service-block {
+        @include adaptiveFontSize(16, 14);
+    }
+}
+
+.service-block {
+    &__text {
+        max-width: 640px;
+        margin-top: 10px;
+    }
+
+    &__list {
+        max-width: 640px;
+        padding-left: 20px;
+    }
+}
+
+.service-list {
+    &__elem {
+        list-style-type: disc;
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+
+
+// ==> Styles for small devices
+@media screen and (max-widtH: #{$bp-md + px}) {
+    .content {
+        &__service-title {
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+
+        &__service-price {
+            margin-top: 40px !important;
+        }
+    }
+}

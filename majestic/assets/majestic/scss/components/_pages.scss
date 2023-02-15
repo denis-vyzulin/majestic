@@ -13,6 +13,33 @@
     &__subtitle {
         color: $text-color;
         @include adaptiveFontSize(18, 14);
+
+        &--link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $text-color;
+            text-decoration: none;
+            @include adaptiveFontSize(15, 13);
+            transition: color .3s;
+
+            &:hover {
+                color: $primary-color;
+
+                svg path {
+                    fill: $primary-color;
+                }
+            }
+
+            svg {
+                max-width: 13px;
+                margin-right: 4px;
+                path {
+                    fill: $text-color;
+                    transition: fill .3s;
+                }
+            }
+        }
     }
 }
 
