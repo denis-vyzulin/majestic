@@ -40,6 +40,10 @@
         text-decoration: none;
         @include adaptiveFontSize(16, 14);
         background-color: $primary-color;
+
+        &:hover {
+            background-color: ligh($primary-color, 0.1);
+        }
     }
 }
 
@@ -61,7 +65,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 40px 64px;
+        padding: 24px 64px 40px;
     }
 }
 
@@ -76,13 +80,15 @@
 
 .advantage-item {
     &__icon {
-        display: inline-block;
-        height: 48px;
-        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 80px;
         margin-right: 20px;
 
         path {
-            stroke: $text-color;
+            stroke: $primary-color;
         }
     }
 }
@@ -135,7 +141,7 @@
             padding-bottom: 160px;
         }
         &__advantage {
-            padding: 24px 16px;
+            padding: 16px 16px 24px;
         }
         &__about {
             padding: 24px 16px 36px;
