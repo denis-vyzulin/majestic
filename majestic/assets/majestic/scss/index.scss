@@ -39,10 +39,11 @@
         color: white;
         text-decoration: none;
         @include adaptiveFontSize(16, 14);
-        background-color: $primary-color;
+        background: $primary-color;
+        transition: background .3s;
 
         &:hover {
-            background-color: ligh($primary-color, 0.1);
+            background: darken($primary-color, 6.25%);
         }
     }
 }
@@ -115,6 +116,75 @@
     }
 }
 
+
+
+// ==> Our Services
+.content {
+    &__our-services {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.our-services {
+    &__title {
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    &__cards {
+        justify-content: center;
+        margin-top: 8px !important;
+    }
+
+    &__btn {
+        margin: 16px auto 40px;
+        text-align: center;
+    }
+}
+
+
+// ==> Only for services breakpoints
+@media screen and (max-width: 620px) and (max-height: 500px) {
+    .services {
+        &__item {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) and (max-height: 500px) {
+    .services {
+        &__item {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) and (min-height: 500px) {
+    .services {
+        &__item {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-height: 500px) {
+    .services {
+        &__item {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
 
 
 // Styles for small computer

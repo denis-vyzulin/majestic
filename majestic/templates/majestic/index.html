@@ -14,6 +14,7 @@
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'majestic/css/index.min.css' %}">
+<link rel="stylesheet" href="{% static 'majestic/css/services.min.css' %}">
 {% endblock %}
 
 
@@ -26,7 +27,7 @@
     <p class="intro__text">
         Наносим рисунки на&nbsp;крой и&nbsp;текстильные изделия, используя современное оборудование, которое позволяет выполнять заказы быстро и&nbsp;качественно.
     </p>
-    <a href="" class="intro__btn">
+    <a href="{% url 'majestic:services' %}" class="intro__btn _btn _btn--primary">
         Посмотреть услуги
     </a>
 </section>
@@ -107,8 +108,67 @@
         О&nbsp;нашей компании
     </h2>
     <p class="about__text">
-        Мы занимаемся нанесением логотипов на&nbsp;готовые или текстильные изделия и&nbsp;крой при&nbsp;помощи современного вышивального оборудования. Наша компания «Majestic» работает с&nbsp;2018 года. За&nbsp;4 года мы смогли сильно преуспеть в&nbsp;нашей сфере и&nbsp;поработать с&nbsp;многими крупными компаниями
+        Мы занимаемся нанесением логотипов на&nbsp;готовые или текстильные изделия и&nbsp;крой при&nbsp;помощи современного вышивального оборудования. Наша компания «Majestic» работает с&nbsp;2018 года. За 4 года мы смогли добиться неплохих результатов, но&nbsp;не&nbsp;стоим на&nbsp;месте, а&nbsp;продолжаем постоянно совершенствовать качество своей работы и&nbsp;развивать новые направления, на&nbsp;благо наших Клиентов.
     </p>
 </section>
 <!-- / end of about -->
+
+<section class="our-services content__our-services">
+    <h2 class="our-services__title">
+        Наши услуги
+    </h2>
+    <div class="services content__services our-services__cards">
+        <a href="{% url 'majestic:vnkroe' %}" class="service services__item">
+            <div class="service-upside service__upside">
+                <img src="{% static 'majestic/img/services/bs-vnkroe.png' %}" alt="" class="service-upside__background">
+                <p class="service-upside__text">
+                    Перейти к описанию ->
+                </p>
+            </div>
+            <div class="service-backside service__backside">
+                <img src="{% static 'majestic/img/services/example.png' %}" alt="" class="service-backside__icon">
+                <h4 class="service-backside__name">
+                    Вышивка на крое
+                </h4>
+            </div>
+        </a>
+        <!-- / end of item -->
+
+        <a href="{% url 'majestic:shevnash' %}" class="service services__item">
+            <div class="service-upside service__upside">
+                <img src="{% static 'majestic/img/services/bs-shevnash.png' %}" alt="" class="service-upside__background">
+                <p class="service-upside__text">
+                    Перейти к описанию ->
+                </p>
+            </div>
+            <div class="service-backside service__backside">
+                <img src="{% static 'majestic/img/services/example-2.png' %}" alt="" class="service-backside__icon">
+                <h4 class="service-backside__name">
+                    Шевроны и нашивки
+                </h4>
+            </div>
+        </a>
+        <!-- / end of item -->
+
+        <a href="{% url 'majestic:vngotizd' %}" class="service services__item">
+            <div class="service-upside service__upside">
+                <img src="{% static 'majestic/img/services/bs-vngotizd.png' %}" alt="" class="service-upside__background">
+                <p class="service-upside__text">
+                    Перейти к описанию ->
+                </p>
+            </div>
+            <div class="service-backside service__backside">
+                <img src="{% static 'majestic/img/services/example-3.png' %}" alt="" class="service-backside__icon">
+                <h4 class="service-backside__name">
+                    Вышивка на готовых изделиях
+                </h4>
+            </div>
+        </a>
+        <!-- / end of item -->
+    </div>
+    <a href="{% url 'majestic:services' %}" class="our-services__btn _btn _btn--primary">
+        Открыть услуги
+    </a>
+</section>
+<!-- / end of services -->
 {% endblock %}
