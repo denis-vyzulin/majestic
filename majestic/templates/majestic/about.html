@@ -1,0 +1,34 @@
+{% extends 'majestic/base.html' %}
+{% load static %}
+
+
+{% block meta_tags %}
+
+{% endblock %}
+
+{% block title %}
+<title>
+    О компании «Majestic»
+</title>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'majestic/css/about.min.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="page-headings content__headings">
+    <h1 class="page-title page-headings__title">
+        Наша компания
+    </h1>
+</div>
+<!-- / end of page headings -->
+
+<section class="about content__about">
+    <p class="about__paragraph">
+        Мы занимаемся нанесением логотипов на&nbsp;готовые или текстильные изделия и&nbsp;крой при&nbsp;помощи современного вышивального оборудования. Наша компания «Majestic» работает с&nbsp;2018 года. За 4 года мы смогли добиться неплохих результатов, но&nbsp;не&nbsp;стоим на&nbsp;месте, а&nbsp;продолжаем постоянно совершенствовать качество своей работы и&nbsp;развивать новые направления, на&nbsp;благо наших Клиентов.
+    </p>
+</section>
+<!-- / end of about -->
+{% endblock %}

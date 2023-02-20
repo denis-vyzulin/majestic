@@ -1,0 +1,99 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+
+
+.wrapper {
+    &__content {
+        padding: 0 !important;
+    }
+}
+
+.content {
+    &__headings {
+        margin: 40px 64px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 40px 64px;
+    }
+}
+
+.contacts {
+    &__form {
+        flex: 0 calc(100% - 320px) calc(100% - 360px);
+        max-width: 640px;
+        padding-right: 32px;
+    }
+
+    &__managers {
+        flex: 0 280px 320px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+.managers {
+    &__people {
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+    }
+}
+
+.managers-people {
+    &__phone {
+        font-weight: 400;
+        @include adaptiveFontSize(20, 16);
+    }
+}
+
+.managers-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__link {
+        height: 32px;
+        width: 32px;
+        margin-top: 8px;
+        transition: opacity .3s;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.content {
+    &__map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 96px;
+        padding-bottom: 72px;
+        text-decoration: none;
+        background-image: url('/static/majestic/img/map-background.png');
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.map {
+    &__title {
+        color: white;
+        letter-spacing: 1.1px;
+        @include adaptiveFontSize(32, 18);
+    }
+}

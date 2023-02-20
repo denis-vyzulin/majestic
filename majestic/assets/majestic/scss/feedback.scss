@@ -1,0 +1,59 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+
+
+.contacts-form {
+    &__feedback {
+        display: block;
+    }
+}
+
+.feedback {
+    &__btn {
+        grid-column: span 2;
+        width: fit-content;
+    }
+
+    &__area {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &__field-name {
+        font-weight: 500;
+    }
+
+    &__field-description {
+        margin-left: 12px;
+        @include adaptiveFontSize(15, 13);
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    &__field,
+    &__textarea {
+        width: 100%;
+        padding: 8px 16px;
+        border: 1px solid $border-color;
+        resize: none;
+    }
+}
+
+.textarea-field {
+    grid-row: span 3;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.checkbox-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    grid-column: span 2;
+}

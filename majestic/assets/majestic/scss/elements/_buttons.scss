@@ -3,6 +3,7 @@
     padding: 12px 32px;
     text-decoration: none;
     @include adaptiveFontSize(16, 14);
+    cursor: pointer;
     transition: background .3s;
 
     &--primary {

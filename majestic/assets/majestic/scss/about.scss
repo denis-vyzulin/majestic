@@ -1,0 +1,17 @@
+@import 'core/variables';
+@import 'core/mixins';
+
+
+
+.content {
+    &__about {
+        margin-top: 12px;
+    }
+}
+
+.about {
+    &__paragraph {
+        max-width: 800px;
+        line-height: 1.6;
+    }
+}

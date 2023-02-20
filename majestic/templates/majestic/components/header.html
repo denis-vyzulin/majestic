@@ -5,7 +5,7 @@
             <img src="{% static 'logotype.png' %}" alt="" class="header-inner__logo">
         </a>
         <nav class="menu header-inner__menu">
-            <a href="" class="menu__link
+            <a href="{% url 'majestic:about' %}" class="menu__link
             {% if request.path == '/about/' %}_active{% endif %}">
                 О компании
             </a>
@@ -17,11 +17,11 @@
             {% if request.path == '/price/' %}_active{% endif %}">
                 Стоимость вышивки
             </a>
-            <a href="" class="menu__link
+            <a href="{% url 'majestic:qna' %}" class="menu__link
             {% if request.path == '/qna/' %}_active{% endif %}">
                 Вопросы и ответы
             </a>
-            <a href="" class="menu__link
+            <a href="{% url 'majestic:contacts' %}" class="menu__link
             {% if request.path == '/contacts/' %}_active{% endif %}">
                 Контакты
             </a>

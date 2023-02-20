@@ -4,16 +4,16 @@
             <a href="{% url 'majestic:home' %}" class="footer-navigation__item">
                 Главная страница
             </a>
-            <a href="" class="footer-navigation__item">
+            <a href="{% url 'majestic:about' %}" class="footer-navigation__item">
                 О компании
             </a>
             <a href="{% url 'majestic:price' %}" class="footer-navigation__item">
                 Стоимость вышивки
             </a>
-            <a href="" class="footer-navigation__item">
+            <a href="{% url 'majestic:contacts' %}" class="footer-navigation__item">
                 Контактная информация
             </a>
-            <a href="" class="footer-navigation__item">
+            <a href="{% url 'majestic:qna' %}" class="footer-navigation__item">
                 Вопросы и ответы
             </a>
         </div>
@@ -82,10 +82,10 @@
                 &copy;2023. Вышивальная компания «Маджестик»
             </p>
             <div class="footer-links footer-info__links">
-                <a class="footer-links__item" href="">
+                <a href="{% url 'majestic:privacy-policy' %}" class="footer-links__item">
                     Политика конфиденциальности
                 </a>
-                <a class="footer-links__item" href="">
+                <a href="{% url 'sitemap' %}" class="footer-links__item">
                     Карта сайта
                 </a>
             </div>
